@@ -1,0 +1,217 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.dark-mode {
+    color:white;
+    background-color: black;
+    
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 100vh;
+    justify-content: space-between;
+   }
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ background-color: rgb(43, 43, 56);
+ padding: 15px 10px;
+ position: relative;
+}
+
+nav .navigation {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0 10px;
+ cursor: pointer;
+}
+
+nav .open-menu {
+ color: black;
+}
+
+nav .navigation li a{
+ color :white;
+ padding : 8px 20px;
+}
+
+nav h1 {
+ color: burlywood;
+}
+
+
+.profile {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+ width: 100%;
+ padding: 100px 0;
+ border-bottom: 2px solid rgb(0, 0, 0);
+ background-image: url(https://3440x1440.com/wp-content/uploads/2019/03/tokyo-blue-3440x1440-1820x762.jpg);
+ background-size: cover;
+}
+
+.profile h2 {
+    font-size: 3em;
+}
+
+.profile p {
+    font-size: 2.5em;
+}  
+
+.profile-img {
+ max-width: 200px;
+ border: 5px solid rgb(0, 0, 0);
+}
+
+.content {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.about {
+  display: inline-block;
+  width: 100%;
+  padding-top:50px;
+}
+
+.about p{
+ padding : 50px 40px;  
+ font-size: 1.5em;
+ text-align: center;
+}
+
+.content h3 {
+ border-bottom: 2px solid #3d3d3d;
+ padding : 10px 40px;
+ color: rgb(148, 157, 182);
+ font-size: 2.5em;
+ text-align: center;
+}
+
+.education {
+    padding:50px 0;
+ 
+}
+.box-content {
+ display: flex;
+ width :100%;
+ justify-content: space-between;
+ padding:20px 100px;
+}
+
+.box-content h4 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.box-content li {
+    font-size: 1.5em;
+}
+
+input, textarea {
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+}
+
+.contact {
+    padding-top:50px ;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contact-submit {
+    background-color:#dee7ec;
+    color:#000000;
+}
+
+.contact-submit:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer {
+ display: flex;
+  width: 100%;
+ background-color: rgb(43, 43, 56);
+ padding: 15px 10px;
+ position: relative;
+}
+
+footer h1 {
+    color: rgb(222, 184, 135);
+}
+
+/*  animation */
+.mydiv {
+    background-image: url(http://www.banques-en-ligne.fr/img/calculatrice-credit/background.svg);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    transition: 0.25s ease all;
+    opacity: 0.10;
+    background-size: 314px;
+    background-position-y: -15px;
+    background-position-x: -15px;
+}
+
+.mydiv:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    nav .navigation {
+        display: none;
+    }
+    .profile h2 {
+        font-size: 1.5em;
+    }
+    .profile p {
+        font-size: 1em;
+    }
+    .box-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .box-content h4 {
+        font-size: 1.5em;
+    }
+
+    .box-content li {
+        font-size: 1em;
+    }
+    
+    
+}
